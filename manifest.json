@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "PinBlock",
+  "description": "Block promoted pins on Pinterest",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "*://pinterest.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://pinterest.com/*"],
+      "js": ["pb.js"]
+    }
+  ]
+}
