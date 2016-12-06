@@ -6,11 +6,11 @@
   "version": "1.0",
   "permissions": [
     "tabs",
-    "*://pinterest.com/*"
+    "*://*/*"
   ],
   "content_scripts": [
     {
-      "matches": ["*://pinterest.com/*"],
+      "matches": ["*://*/*"],
       "js": ["pb.js"]
     }
   ]
